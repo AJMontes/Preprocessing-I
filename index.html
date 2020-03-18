@@ -1,6 +1,9 @@
 <!doctype html>
 
 <html lang="en">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
   <meta charset="utf-8">
 
@@ -18,13 +21,32 @@
   <!-- Heeader starts here. Resueme, and picture (25% of parent) and 
   then add my name-->
 
-    <header> 
+    <header id="headertop"> 
+
+      <span class="hidden"><a href="#main-content">
+        click to skip to main content</a></span>
+
+      <nav>
+        <a href="#aboutme">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Educaton</a>
+        <a href="#experiance">Experiance</a>
+        <a href="#accomplishments">Accomplishments</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
       <h1> My Resume</h1>
-      <nav class="myprofile">
-        <img src="images/myself.jpg" alt="A picture of the person Alexis Johan Montecillo Jimenez">
+
+      <div class="myprofile">
 
         <h2>Alexis Johan Montecillo Jimenez</h2>
-      </nav>
+
+        <img src="images/myself.jpg" alt="A picture of the person Alexis Johan Montecillo Jimenez">
+
+      </div>
+
+    
+
     </header>
 
     <!-- Header End here
@@ -32,9 +54,11 @@
 
     <section class="middleinfo">
 
-      <nav class="leftbox"> 
 
-          <nav class="profilesquare aboutme">
+      <!-- Everything here we want on the left side of the Resueme-->
+      <div class="leftbox"> 
+
+          <div class="profilesquare" id="aboutme">
             
             <h3> About me</h3>
 
@@ -44,9 +68,9 @@
               school to learn Web development and learning Japanese.
             </p>
 
-          </nav>
+          </div>
 
-          <nav class="profilesquare skills">
+          <div class="profilesquare" id="skills">
           
               <h3>Key Skills</h3>
 
@@ -69,16 +93,19 @@
 
               </ul>
 
-              <a href="file:///C:/Users/AJoha/Desktop/portfolio-website/index.html"> <button>Click here to learn more of my projects</button></a>
+                <a href="file:///C:/Users/AJoha/Desktop/portfolio-website/index.html"> <button>Click here to learn more of my projects</button></a>
 
-          </nav>
+          </div>
 
-        </nav>
+          <!-- Everything here we want on the right side of the 
+          Resume-->
 
-        <nav class="leftbox">
+        </div>
+
+        <div class="rightbox">
 
 
-            <nav class="profilesquare education">
+            <div class="profilesquare" id="education">
 
               <h3>Education</h3>
 
@@ -87,9 +114,9 @@
                 <li>Currently enrolled in Lambda university.</li>
               </ol>
 
-            </nav>
+            </div>
 
-            <nav class="profilesquare experiance">
+            <div class="profilesquare" id="experiance">
 
               <h3> Experiance</h3>
 
@@ -99,9 +126,9 @@
                   <li>Clearner at PK Services</li>
               </ul>
 
-            </nav>
+            </div>
 
-            <nav class="profilesquarer accomplishments">
+            <div class="profilesquarer" id="accomplishments">
             
               <h3>Accomplishments</h3>
 
@@ -112,14 +139,14 @@
 
               </ul>
 
-            </nav>
+            </div>
 
-        </nav> 
+        </div> 
 
 
     </section>
 
-    <footer>
+    <footer id="contact"> 
 
       <h4>Contact info</h4>
 
@@ -129,8 +156,11 @@
         Minnesota, USA
       </address>
 
-      <p>Last updates Feb-19-2020</p>
+      <a href="#headertop">Return to top</a>
 
+      <p>Last updated Feb-19-2020</p>
+
+    
     </footer>
 
 </body>
